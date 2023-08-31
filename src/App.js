@@ -5,19 +5,19 @@ function App() {
 
   const [num, setNum] = useState(0);
 
-  // useEffect(() => {
-  //   if (num === 0) {
-  //     setNum(5 + Math.random() * 50);
-  //   }
-  // }, [num]);
-  // console.log(num);
-
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (num === 0) {
       setNum(5 + Math.random() * 50);
     }
   }, [num]);
   console.log(num);
+
+  // useLayoutEffect(() => {
+  //   if (num === 0) {
+  //     setNum(5 + Math.random() * 50);
+  //   }
+  // }, [num]);
+  // console.log(num);
 
   return (
     <div className="App">
